@@ -58,4 +58,20 @@ class _ScreenState extends State<Screen> {
       }
     }
   }
+  void microphone() async {
+  if (await Permission.microphone.status.isGranted) {
+    // Microphone permission is granted
+    // Implement the logic for handling microphone access here
+  } else {
+    var status = await Permission.microphone.request();
+    print(status);
+    if (status == PermissionStatus.granted) {
+      // Microphone permission is granted
+      // Implement the logic for handling microphone access here
+    } else if (status == PermissionStatus.permanentlyDenied) {
+      openAppSettings();
+    }
+  }
+  }
+  
 }
