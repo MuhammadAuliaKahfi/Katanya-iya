@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:latihan_10/camera.dart';
 import 'package:latihan_10/contact.dart';
 import 'package:permission_handler/permission_handler.dart';
-
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
 
 class Screen extends StatefulWidget {
   const Screen({super.key});
