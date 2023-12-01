@@ -21,7 +21,9 @@ class _ScreenState extends State<Screen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ElevatedButton(onPressed: contact, child: Text("Contact")),
-          ElevatedButton(onPressed: camera, child: Text("Camera"))
+          ElevatedButton(onPressed: camera, child: Text("Camera")),
+          ElevatedButton(onPressed: microphone, child: Text("Microphone"))
+          
         ],
       )),
     );
